@@ -24,7 +24,9 @@ class circle(shape):
     def area(self):
             return 3.14 * self.radius **2
 
-class roti(circle):
+# polymorphism through inheritence
+
+class roti(circle):      
     def __init__(self,flour,radius):
         super().__init__(radius)
         self.flour = flour
