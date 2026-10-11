@@ -1,4 +1,4 @@
-# Class method = allows operations related to class itself
+#  Class method = allows operations related to class itself
 #              use (cls) as first parameter
 
 class Student:
@@ -22,7 +22,10 @@ class Student:
 
     @classmethod
     def get_gpa(cls):
-        return f"Average GPA : {round(cls.total_gpa/cls.count,2)}"
+        if cls.count == 0 :
+            return 0
+        else:
+            return f"Average GPA : {round(cls.total_gpa/cls.count,2)}"
 
 Keshv = Student("Keshv",8.3)
 Atharv = Student("Atharv",7.4)
