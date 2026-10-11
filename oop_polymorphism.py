@@ -1,3 +1,9 @@
+# poly  = many
+#morphe = forms
+
+#Two ways to achieve
+#1. inheritence = Object can be treted as same type as parent class
+
 class shape:
     def area(self):
         pass
