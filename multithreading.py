@@ -25,3 +25,10 @@ task2.start()
 
 task3 = threading.Thread(target=git_pull , args = ("threading",))
 task3.start()
+
+task1.join()
+task2.join()
+task3.join()
+
+print("------------GOOD JOB------------")
+print("-------All Tasks Completed--------")
