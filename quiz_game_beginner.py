@@ -1,9 +1,5 @@
 """
 BEGINNER Python Quiz Game
---------------------------
-This version is kept as simple as possible.
-Concepts used: variables, strings, lists, tuples, if/elif/else, and a for loop.
-Every step is explained with comments.
 """
 
 # STEP 1: Store our questions.
@@ -11,7 +7,7 @@ Every step is explained with comments.
 #   1) the question text
 #   2) a list of 4 possible answers
 #   3) the number of the correct answer (1, 2, 3, or 4)
-
+                                                                                                                                                                                                                                                                                                                                          
 question_1 = ("What color do you get by mixing blue and yellow?",
               ["Red", "Green", "Purple", "Orange"],
               2)
@@ -51,12 +47,12 @@ for question in all_questions:
     # Each question tuple has 3 parts, so we can "unpack" it into 3 variables:
     question_text = question[0]
     answer_choices = question[1]
-    correct_answer = question[2]
+    correct_answer = question[2] 
 
     # Show the question
     print("Question", question_number, ":", question_text)
 
-    # Show the 4 answer choices
+    # Show the 4 answer choices 
     print("1.", answer_choices[0])
     print("2.", answer_choices[1])
     print("3.", answer_choices[2])
@@ -70,7 +66,7 @@ for question in all_questions:
     if player_answer == "1" or player_answer == "2" or player_answer == "3" or player_answer == "4":
 
         player_answer_number = int(player_answer)
-
+        
         if player_answer_number == correct_answer:
             print("That's correct!")
             score = score + 1
@@ -83,6 +79,6 @@ for question in all_questions:
     print("")  # blank line for spacing
     question_number = question_number + 1
 
-# STEP 5: Show the final score once all questions are done.
+# STEP 5: Show the final score once all questions are done. 
 print("You finished the quiz!")
 print("Your final score is:", score, "out of", len(all_questions))
